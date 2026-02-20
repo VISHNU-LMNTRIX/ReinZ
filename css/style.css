@@ -157,7 +157,7 @@ ul { list-style: none; }
 .category-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 1200px; margin: 0 auto; }
 .category-item { text-align: center; cursor: pointer; }
 .category-circle {
-    width: 80%; max-width: 220px; margin: 0 auto 15px; 
+    width: 95%; max-width: 280px; margin: 0 auto 15px; 
     aspect-ratio: 1; border-radius: 50%; overflow: hidden; background: #eee;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease;
 }
@@ -245,7 +245,12 @@ ul { list-style: none; }
 
     /* Categories Home */
     .section-title { font-size: 2.5em; }
-    .category-grid { grid-template-columns: repeat(3, 1fr); gap: 40px 0px; margin-top: 40px; }
+    .category-grid { 
+        grid-template-columns: repeat(2, 1fr); /* Forces 2 per row */
+        gap: 50px 30px; 
+        margin-top: 40px; 
+        max-width: 1000px; /* Keeps the two items nicely centered instead of spreading to the edges */
+    }
     .category-item p { font-size: 1.2em; }
 
     /* Brands */
