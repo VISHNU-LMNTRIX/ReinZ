@@ -1,21 +1,6 @@
 /* js/data.js */
 const leksvinData = {
     categories: [
-        // { id: 'cleaning-detailing-essentials', name: "Cleaning & Detailing", image: "img/product-category/cleaning_and_detailing.jpg" },
-        // { id: 'interior-exterior-care', name: "Interior & Exterior Care Products", image: "img/product-category/interior_and_exterior_care.jpg" },
-        // { id: 'protective-coatings-waxes', name: "Protective Coatings & Waxes", image: "img/product-category/coatings_and_waxes.jpg" },
-        // { id: 'maintenance-solutions', name: "Maintenance Solutions", image: "img/product-category/maintenance_solutions.jpg" },
-        // { id: 'industrial-cleaners', name: "Industrial Cleaners", image: "img/product-category/industrial_cleaners.jpg" },
-        // { id: 'carwash-carcare', name: "Car Wash & Car Care", image: "img/product-category/car_wash_&_car_care.jpg" },
-        // { id: 'workshop-cleaners', name: "Workshop Cleaners", image: "img/product-category/workshop_cleaning.jpg" },
-        // { id: 'decontamination-chemicals', name: "Decontamination Chemicals", image: "img/product-category/decontamination_chemicals.jpg" },
-        // { id: 'heavy-duty-cleaning-compounds', name: "Heavy Duty Cleaning Compounds", image: "img/product-category/heavy_duty_cleaning_compound.jpg" },
-        // { id: 'electrical-contact-cleaners', name: "Electrical Contact Cleaners", image: "img/product-category/electrical_cleaners.jpg" },
-        // { id: 'ev-fluids', name: "EV Fluids", image: "img/product-category/ev_fluids.jpg" },
-        // { id: 'floor-cleaners', name: "Floor Cleaners", image: "img/product-category/floor_cleaning.jpg" },
-        // { id: 'home-care-chemicals', name: "Home Care Chemicals", image: "img/product-category/home_care_chemicals.jpg" },
-        // { id: 'marine-cleaners', name: "Marine Cleaners", image: "img/product-category/marine_cleaning.jpg" },
-
         { id: 'exterior-coatings', name: "Exterior Nano Coatings", image: "img/product-category/exterior_coatings.jpg" },
         { id: 'paint-correction', name: "Paint Correction & Polishing", image: "img/product-category/paint_correction.jpg" },
         { id: 'interior-protection', name: "Interior Protection", image: "img/product-category/interior_protection.jpg" },
@@ -24,287 +9,15 @@ const leksvinData = {
 
     // Product Data Dictionary
     products: {
-        // 'protective-coatings-waxes': [
-        //     {
-        //         id: 'coat-01',
-        //         name: "Pure Ceramic Coating",
-        //         price: "Inquire for Price",
-        //         image: "img/products/pure_ceramic_coating.webp",
-        //         desc: {
-        //             text: "Nano Ceramic Coating is an advanced liquid polymer applied to a vehicle’s exterior surfaces to create a durable, transparent protective layer. It chemically bonds with the paint, providing superior resistance against UV rays, oxidation, dirt, and minor scratches.",
-        //             bullets: ["Exterior Paint Protection & High Gloss", "Self Cleaning, Super Hydrophobic", "Weather resistance, UV Resistance", "Excellent Durability and up to 5 year protection"]
-        //         }
-        //     },
-        //     {
-        //         id: 'coat-02',
-        //         name: "Graphene Pro Coating",
-        //         price: "Inquire for Price",
-        //         image: "img/products/graphene_pro_coating.webp",
-        //         desc: {
-        //             text: "Graphene Pro Coat is an advanced, easy-to-use nano paint protection coating that provides exceptional surface clarity and durability. Its visible application and enhanced chemical composition deliver long-lasting, high-performance protection.",
-        //             bullets: ["Enhanced with Additional Silicate Resin for superior durability", "Minimized water spotting for a cleaner finish", "Low sliding angle (10–15°) & High contact angle (110–118°)", "Patent-pending UV Tracing Technology™", "Safe on paint, glass, chrome, trim, and wheels"]
-        //         }
-        //     },
-        //     {
-        //         id: 'coat-03',
-        //         name: "Advanced Borophene Coat",
-        //         price: "Inquire for Price",
-        //         image: "img/products/advanced_borophene_coating.webp",
-        //         desc: {
-        //             text: "Borophene Coating is a next-generation nano protective coating formulated using advanced boron-based nanomaterials. Renowned for its exceptional strength, thermal stability, and conductivity, borophene provides superior protection and surface enhancement compared to traditional ceramic coatings.",
-        //             bullets: ["Ultra-High Strength Protection", "Enhanced UV & Oxidation Resistance", "Superior Gloss and Clarity", "Hydrophobic & Self-Cleaning Effect", "Thermal Stability & Chemical Resistance", "Smooth Surface Finish", "Long Lasting Durability"]
-        //         }
-        //     },
-        //     {
-        //         id: 'coat-04',
-        //         name: "Ultimate Borograph Coating",
-        //         price: "Inquire for Price",
-        //         image: "img/products/ultimate_borograph_coating.webp",
-        //         desc: {
-        //             text: "Borograph Coating is an advanced hybrid nano coating that combines the superior hardness of graphene with the exceptional durability of borophene technology. This unique formulation delivers outstanding surface protection, gloss, and hydrophobic performance for automotive paintwork and other exterior surfaces.",
-        //             bullets: ["Forms a dense, ultra-smooth layer", "Resists UV rays, oxidation, and chemical stains", "Dual-layer molecular structure enhances surface strength"]
-        //         }
-        //     },
-        //     {
-        //         id: 'coat-05',
-        //         name: "Night Ride Coat",
-        //         price: "Inquire for Price",
-        //         image: "img/products/night_ride_coat.webp",
-        //         desc: {
-        //             text: "Night Illuminating Ceramic Coating is a premium nano-protective coating infused with photoluminescent compounds that make vehicle surfaces subtly glow in low light or at night. Designed for both aesthetics and performance, this advanced formula not only enhances night time visibility but also provides long-lasting protection.",
-        //             bullets: ["Photoluminescent Glow Effect", "Dual-Action Protection & Aesthetics", "Advanced Nano Ceramic Shield", "Scratch & Swirl Resistance", "Thermal & Chemical Stability", "Long-Lasting Durability"]
-        //         }
-        //     },
-        //     {
-        //         id: 'coat-11',
-        //         name: "Final Wax Polish",
-        //         price: "Inquire for Price",
-        //         image: "img/products/final_wax_polish.webp",
-        //         desc: {
-        //             text: "Helps to remove holograms and gives a super shine to the painted surfaces.",
-        //             bullets: ["Removes holograms", "Super shine finish"]
-        //         }
-        //     },
-        //     {
-        //         id: 'coat-12',
-        //         name: "Spray Carnauba Wax",
-        //         price: "Inquire for Price",
-        //         image: "img/products/spray_carnauba_wax.webp",
-        //         desc: {
-        //             text: "To make a protective barrier for the finished paint work that lasts over months. Specially made carnauba liquid wax for an easy waxing to get high level of shining.",
-        //             bullets: ["Protective barrier", "Easy application", "High level shine"]
-        //         }
-        //     },
-        //     {
-        //         id: 'coat-13',
-        //         name: "Carnauba Cream Wax",
-        //         price: "Inquire for Price",
-        //         image: "img/products/carnauba_cream_wax.webp",
-        //         desc: {
-        //             text: "Its formulation helps to give extra shining and glaze to the polished surfaces. It can be used with machine and waxing pads.",
-        //             bullets: ["Extra shine and glaze", "Machine compatible", "Easy to use"]
-        //         }
-        //     }
-        // ],
-        // 'interior-exterior-care': [
-        //     {
-        //         id: 'int-01',
-        //         name: "Z'Leather Coat",
-        //         price: "Inquire for Price",
-        //         image: "img/products/z'leather_coat.webp",
-        //         desc: {
-        //             text: "Leather Upholstery Coating that protects your leather parts against stains, aging and marks. Creates a smooth and hydrophobic surface that is easy to clean.",
-        //             bullets: ["Protects against stains and aging", "Hydrophobic surface", "Durability: 1000 passes of abrasion (~6 months)"]
-        //         }
-        //     },
-        //     {
-        //         id: 'int-02',
-        //         name: "Z'Fabric Coat",
-        //         price: "Inquire for Price",
-        //         image: "img/products/z'fabric_coat.webp",
-        //         desc: {
-        //             text: "Fabric coat helps to repel water based spills without changing the feel of the fabric. A solvent based deep penetrating protectant that evaporates quickly leaving an invisible protective barrier.",
-        //             bullets: ["Repels water based spills", "Invisible protective barrier", "Ideal for upholstery, curtains, pillows, table linens, backpacks, luggage and more"]
-        //         }
-        //     },
-        //     {
-        //         id: 'int-03',
-        //         name: "Leather ProZ",
-        //         price: "Inquire for Price",
-        //         image: "img/products/leather_proZ.webp",
-        //         desc: {
-        //             text: "Leather ProZ is a cleaner and conditioner designed to restore leather seats and surfaces to a new look.",
-        //             bullets: ["Cleans and conditions", "Restores new look", "Maintains original smoothness and texture"]
-        //         }
-        //     },
-        //     {
-        //         id: 'int-04',
-        //         name: "Upholstery Cleaner",
-        //         price: "Inquire for Price",
-        //         image: "img/products/upholstery_cleaner.webp",
-        //         desc: {
-        //             text: "Upholstery Cleaner is designed to clean and remove dirt and grime from almost all car surfaces. It is formulated to be less harmful to breathe.",
-        //             bullets: ["Removes dirt and grime", "Versatile surface application", "Safer formulation"]
-        //         }
-        //     },
-        //     {
-        //         id: 'int-05',
-        //         name: "Universal Dressing",
-        //         price: "Inquire for Price",
-        //         image: "img/products/universal_dressing.webp",
-        //         desc: {
-        //             text: "Protector and restorer of faded plastic and vinyl parts of the cars. Can restore and give new look to rubber, plastic, tyre, trims, and many more.",
-        //             bullets: ["Restores faded plastic/vinyl", "Versatile application (Rubber, Plastic, Tyre)"]
-        //         }
-        //     }
-        // ],
-        // 'cleaning-detailing-essentials': [
-        //     {
-        //         id: 'det-01',
-        //         name: "Detailer Polymer Spray",
-        //         price: "Inquire for Price",
-        //         image: "img/products/detailer_polimer_spray.webp",
-        //         desc: {
-        //             text: "Showroom shine quick detailer spray mainly used to get extra slickness and shine on polished or cleaned cars.",
-        //             bullets: ["Extra slickness", "Showroom shine", "Ideal for PDIs"]
-        //         }
-        //     },
-        //     {
-        //         id: 'det-02',
-        //         name: "1st Cut Compound",
-        //         price: "Inquire for Price",
-        //         image: "img/products/1st_cut_compound.webp",
-        //         desc: {
-        //             text: "Step 1 in paint correction process to remove heavy scratches.",
-        //             bullets: ["Removes heavy scratches", "Compatible with foam and wool pads"]
-        //         }
-        //     },
-        //     {
-        //         id: 'det-03',
-        //         name: "Coating Applicator Block",
-        //         price: "Inquire for Price",
-        //         image: "img/products/coating_applicator_block.webp",
-        //         desc: {
-        //             text: "Block for application of protective coatings like ceramic coating, graphene coating, and leather coating.",
-        //             bullets: ["Ergonomic design", "Suitable for various coatings"]
-        //         }
-        //     },
-        //     {
-        //         id: 'det-04',
-        //         name: "Coating Sued Cloth",
-        //         price: "Inquire for Price",
-        //         image: "img/products/coating_sued_cloth.webp",
-        //         desc: {
-        //             text: "Cloth designed for application of protective coatings like ceramic coating, graphene coating, and leather coating.",
-        //             bullets: ["Smooth application", "Lint-free"]
-        //         }
-        //     },
-        //     {
-        //         id: 'det-05',
-        //         name: "Cutting Foam Pad Maroon 8\"",
-        //         price: "Inquire for Price",
-        //         image: "img/products/cutting_foam_pad_maroon.webp",
-        //         desc: {
-        //             text: "Made with premium synthetic foam for paint correction.",
-        //             bullets: ["Removes heavy scratches", "Premium synthetic foam"]
-        //         }
-        //     },
-        //     {
-        //         id: 'det-06',
-        //         name: "Polishing Foam Pad Yellow 8\"",
-        //         price: "Inquire for Price",
-        //         image: "img/products/polishing_foam_pad_yellow.webp",
-        //         desc: {
-        //             text: "Made with premium synthetic foam for removing moderate scratches.",
-        //             bullets: ["Removes swirl marks", "Moderate scratch removal"]
-        //         }
-        //     },
-        //     {
-        //         id: 'det-07',
-        //         name: "Finishing Foam Pad Black 8\"",
-        //         price: "Inquire for Price",
-        //         image: "img/products/finishing_foam_pad_black.webp",
-        //         desc: {
-        //             text: "Made with premium synthetic foam to remove holograms.",
-        //             bullets: ["Super shine finish", "Ideal for waxing"]
-        //         }
-        //     },
-        //     {
-        //         id: 'det-08',
-        //         name: "Wool Pad 8\"",
-        //         price: "Inquire for Price",
-        //         image: "img/products/wool_pad.webp",
-        //         desc: {
-        //             text: "Made of sheep wool for cutting scratches from old paint works.",
-        //             bullets: ["Heavy cutting", "Natural sheep wool"]
-        //         }
-        //     }
-        // ],
-        // 'maintenance-solutions': [
-        //     {
-        //         id: 'main-01',
-        //         name: "Engine Shiner",
-        //         price: "Inquire for Price",
-        //         image: "img/products/engine_shiner.webp",
-        //         desc: {
-        //             text: "Gives engine room a brand new look. Helps to shine and protect engine compartments. Non-conductive formula safely restores new looks without water rinsing.",
-        //             bullets: ["Restores new look", "Non-conductive formula", "No water rinsing required"]
-        //         }
-        //     },
-        //     {
-        //         id: 'main-02',
-        //         name: "Tire Dressing",
-        //         price: "Inquire for Price",
-        //         image: "img/products/tire_dressing.webp",
-        //         desc: {
-        //             text: "To shine the tyre like brand new or even more.",
-        //             bullets: ["High gloss shine", "Restores tire appearance"]
-        //         }
-        //     }
-        // ],
-        // 'carwash-carcare': [
-        //     {
-        //         id: 'wash-01',
-        //         name: "Super Suds Wax Shampoo",
-        //         price: "Inquire for Price",
-        //         image: "img/products/super_suds_wax_shampoo.webp",
-        //         desc: {
-        //             text: "New formulation of this shampoo provides extra shine as waxed in washing.",
-        //             bullets: ["Extra shine", "Less streaking", "Reduces water spotting"]
-        //         }
-        //     },
-        //     {
-        //         id: 'wash-02',
-        //         name: "Waterless Wash",
-        //         price: "Inquire for Price",
-        //         image: "img/products/waterless_wash.webp",
-        //         desc: {
-        //             text: "Wash the car without water spillage. It not only cleans the car but also gives shine as waxed.",
-        //             bullets: ["No water spillage", "Cleans and shines", "Eco-friendly solution"]
-        //         }
-        //     }
-        // ],
-        // 'heavy-duty-cleaning-compounds': [
-        //     {
-        //         id: 'hd-01',
-        //         name: "All Purpose Degreaser",
-        //         price: "Inquire for Price",
-        //         image: "img/products/all_purpose_degreaser.webp",
-        //         desc: {
-        //             text: "All Purpose Degreaser is to remove greasy and oily dirt and stain mainly from metal parts, engine room, under chassis etc.",
-        //             bullets: ["Removes grease and oil", "Ideal for engines and chassis", "Heavy duty cleaning"]
-        //         }
-        //     }
-        // ]
         'exterior-coatings': [
             {
                 id: 'ext-01',
-                name: "Borograph Coating",
+                name: "Premium Nano Borograph",
                 price: "Inquire for Price",
                 image: "img/products/borograph.webp",
                 desc: {
-                    text: "A premium hybrid formulation of Graphene and Borophene nano coatings that delivers deep gloss, strong hydrophobicity, and long-lasting protection.",
-                    bullets: ["Forms a smooth, durable layer", "Resists UV rays, oxidation, chemicals, and micro-scratches", "Mirror-like finish that repels water and dust"]
+                    text: "Rein'Z - Borograph Coating - A premium hybrid formulation of Graphene and Borophene nano coatings that delivers deep gloss, strong hydrophobicity, and long-lasting protection. Forms a smooth, durable layer that resists UV rays, oxidation, chemicals and micro-scratches, while giving a slick mirror-like finish that repels water, dust and contaminants.",
+                    bullets: ["Deep Gloss. Lasting Protection", "Engineered for Harsh Conditions", "Graphene-Borophene Powered"]
                 }
             },
             {
@@ -313,8 +26,8 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/borophene.webp",
                 desc: {
-                    text: "An advanced nano-engineered protective solution powered by Borophene technology, one of the strongest and most durable 2D materials.",
-                    bullets: ["Exceptional surface hardness and deep gloss", "Superior Hydrophobic properties", "Low-Friction Surface"]
+                    text: "Rein'Z Borophene Coating is an advanced nano-engineered protective solution powered by Borophene technology, one of the strongest and most durable 2D materials. Designed to deliver exceptional surface hardness, deep gloss and long-lasting protection. It sets a new benchmark in modern coating performance.",
+                    bullets: ["Long-Lasting", "Superior Hydrophobic", "Low-Friction Surface", "High-Gloss, Ultra-Slick"]
                 }
             },
             {
@@ -323,8 +36,8 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/graphene.webp",
                 desc: {
-                    text: "A next-generation nano protective solution formulated with graphene technology, known for its exceptional strength, thermal stability, and conductivity.",
-                    bullets: ["Enhanced Surface Hardness", "Superior Hydrophobic properties", "Oxidation Resistance & Thermal Stability"]
+                    text: "Graphene Coating is a next-generation nano protective solution formulated with graphene technology, a revolutionary 2D carbon material known for its exceptional strength, thermal stability, and conductivity. Engineered to protect and enhance surfaces, it delivers long-lasting gloss, durability and resistance against environmental damage.",
+                    bullets: ["Enhanced Surface Hardness", "Superior Hydrophobicamet", "Oxidation Resistance", "Thermal Stability"]
                 }
             },
             {
@@ -333,8 +46,8 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/nano_ceramic.webp",
                 desc: {
-                    text: "A high-performance surface protection solution formulated with ultra-refined ceramic nanoparticles. Creates a strong, transparent protective layer.",
-                    bullets: ["Brilliant Gloss and Prevents Fading", "High Surface Hardness", "Easy Maintenance"]
+                    text: "Pure Grade Nano Ceramic Coating is a high-performance surface protection solution formulated with ultra-refined ceramic nanoparticles. Designed to create a strong, transparent protective layer. It enhances gloss while delivering reliable, long-term protection against environmental and chemical damage.",
+                    bullets: ["Brilliant Gloss", "Prevents Fading", "High Surface Hardness", "Easy Maintenance"]
                 }
             },
             {
@@ -343,8 +56,8 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/hydro_swipe.webp",
                 desc: {
-                    text: "Utilizes a next-generation silica network infused with nano-borophene particles. Delivers long-term hydrophobic performance in an easy spray-on application.",
-                    bullets: ["Nano-Borophene Silica cross-linking layer", "High-Gloss, Ultra-Slick"]
+                    text: "Utilizes a next-generation silica network infused with nano-borophene particles, engineered to form a dense, cross-linking protective layer. The advanced formula delivers superior surface hardness, chemical resistance and long-term hydrophobic performance in an easy spray-on application.",
+                    bullets: ["Nano-Borophene Silica", "High-Gloss, Ultra-Slick", "Superior Hydrophobic", "3-6 Months Durable"]
                 }
             }
         ],
@@ -355,8 +68,8 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/pro_z1.webp",
                 desc: {
-                    text: "Formulated with advanced abrasive technology for best results on painted surfaces with heavy cutting technology.",
-                    bullets: ["Remove deep scratches", "Fast acting formula"]
+                    text: "Rein'Z paint correction compound PRO-Z1 is formulated with advanced abrasive technology for best results on painted surfaces with heavy cutting technology provides a flawless and finished surface with excellent gloss level.",
+                    bullets: ["Remove deep scratches", "Fast acting formula", "Mirror like finish", "Durable Gloss"]
                 }
             },
             {
@@ -365,8 +78,8 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/pro_z10.webp",
                 desc: {
-                    text: "Enhances the surface to an excellent gloss. This intense blend of silicones and polymers seals for protection and intensifies color.",
-                    bullets: ["Mirror like finish", "Durable gloss"]
+                    text: "Rein'Z polishing compound PRO-Z10 enhances the surface to an excellent gloss. This intense blend of silicones and polymers not only seals for protection, it also intensifies the color of the painted surface while giving a very durable finish.",
+                    bullets: ["Mirror like finish","Remove Deep Scratches", "Fast Acting Formula", "Durable gloss"]
                 }
             }
         ],
@@ -377,7 +90,7 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/skin_z.webp",
                 desc: {
-                    text: "A premium ceramic-based shield designed to preserve the soft, supple feel of your leather while providing industrial-grade protection against daily use.",
+                    text: "Rein'Z Leather Coating is a premium ceramic-based shield designed to preserve the soft, supple feel of your leather while providing industrial-grade protection against daily use.",
                     bullets: ["Superior Stain Resistance", "Dye Transfer Prevention", "UV Shielding"]
                 }
             },
@@ -387,7 +100,7 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/fab_z.webp",
                 desc: {
-                    text: "Uses advanced nanotechnology to wrap every individual fiber in a breathable, protective shield, keeping upholstery looking brand new.",
+                    text: "Rein'Z Fabric Coating uses advanced nanotechnology to wrap every individual fiber in a breathable, protective shield, ensuring your vehicle's upholstery, carpets and floor mats stay looking brand new.",
                     bullets: ["Hydrophobic Technology", "Oil & Grease Resistance", "UV & Color Preservation"]
                 }
             }
@@ -399,8 +112,8 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/guard_z.webp",
                 desc: {
-                    text: "A high-quality TPU (Thermoplastic Polyurethane) film designed to be a virtually invisible barrier for your vehicle's paint surfaces.",
-                    bullets: ["Self-Healing Technology for scratches", "Variable Thickness: Available from 7mil to 10mil", "Protects against stone chips, oils, and acid rain"]
+                    text: "The Ultimate Shield for Your Investment. Rein'Z GUARD-Z is a high-quality TPU (Thermoplastic Polyurethane) film designed to be a virtually invisible barrier for your vehicle's paint surfaces. Whether your car is brand new or a cherished classic, our PPF ensures it remains in showroom condition.",
+                    bullets: ["Self-Healing Technology: Watch scratches and swirl marks disappear as the film surface recovers itself to a 'just waxed' finish automatically.", "Comprehensive Defense: Protects against stone chips, sand, bug splatters, bird droppings, road tar, oils and acid rain.", "Ease of maintenance: Save time on polishing and waxing; a gentle rinse is all it takes to keep your car clean.", "Variable Thickness: Available from 7mil to 10mil", "Versatile Application: Highly stretchable for easy installation on paint surfaces and can also be used as headlight tint.", "High Durability: Built to withstand harsh environmental conditions."]
                 }
             },
             {
@@ -409,8 +122,8 @@ const leksvinData = {
                 price: "Inquire for Price",
                 image: "img/products/tint_z.webp",
                 desc: {
-                    text: "Advanced Nano-Ceramic Technology engineered to offer the perfect balance of style, comfort, and safety without interfering with electronics.",
-                    bullets: ["99% UV Rejection & Superior Heat Control", "Glare Reduction & Shatter Resistance", "Available shades from 2% VLT to 80% VLT"]
+                    text: "Rein'Z - TINT-Z Window films; we provide a shield for you lifestyle. Our advanced film technology is engineered to offer the perfect balance of style, comfort, and safety.",
+                    bullets: ["Nano-Ceramic Technology: High-grade materials that don't interfere with electronics or GPS signals.", "Precision Fit: Designed to bond seamlessly with your glass for a factory-finish look.", "Durabiliy: Scratch-resistant coating that ensures your tint looks new for years to come.", "99% UV Rejection", "Superior Heat Control", "Glare Reduction", "Shatter Resistance", "Available shades from 2% VLT to 80% VLT"]
                 }
             }
         ]
