@@ -331,7 +331,6 @@ function loadMoreProducts() {
                 <img src="${product.image}" alt="${product.name}" onerror="this.src='img/product-category/cleaning_and_detailing.jpg'">
             </div>
             <h3>${product.name}</h3>
-            <p class="price">${product.price}</p>
             <p class="short-desc">${shortDesc}</p>
             <button class="btn-text" onclick="openProductModal('${product.id}')">Details <i class="fa-solid fa-arrow-right"></i></button>
         `;
@@ -372,7 +371,6 @@ function openProductModal(productId) {
             <img src="${product.image}" alt="${product.name}" class="modal-img" onerror="this.src='img/product-category/cleaning_and_detailing.jpg'">
             <div class="modal-details">
                 <h2>${product.name}</h2>
-                <h3 class="modal-price" style="color:var(--accent); margin: 10px 0;">${product.price}</h3>
                 <p style="line-height:1.6;">${product.desc.text}</p>
                 <div class="modal-bullets">${bulletsHTML}</div>
             </div>

@@ -1,10 +1,10 @@
 /* js/data.js */
 const leksvinData = {
     categories: [
-        { id: 'exterior-coatings', name: "Exterior Nano Coatings", image: "img/product-category/exterior_coatings.jpg" },
-        { id: 'paint-correction', name: "Paint Correction & Polishing", image: "img/product-category/paint_correction.jpg" },
-        { id: 'interior-protection', name: "Interior Protection", image: "img/product-category/interior_protection.jpg" },
-        { id: 'automotive-films', name: "Automotive Films", image: "img/product-category/automotive_films.jpg" }
+        { id: 'exterior-coatings', name: "Exterior Nano Coatings", image: "img/product-category/exterior_coatings.webp" },
+        { id: 'paint-correction', name: "Paint Correction & Polishing", image: "img/product-category/paint_correction.webp" },
+        { id: 'interior-protection', name: "Interior Protection", image: "img/product-category/interior_protection.webp" },
+        { id: 'automotive-films', name: "Automotive Films", image: "img/product-category/automotive_films.webp" }
     ],
 
     // Product Data Dictionary
