@@ -1,5 +1,5 @@
 /* js/data.js */
-const leksvinData = {
+const reinzData = {
     categories: [
         { id: 'exterior-coatings', name: "Exterior Nano Coatings", image: "img/product-category/exterior_coatings.webp" },
         { id: 'paint-correction', name: "Paint Correction & Polishing", image: "img/product-category/paint_correction.webp" },

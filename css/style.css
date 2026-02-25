@@ -42,7 +42,7 @@ ul { list-style: none; }
 }
 
 /* Styling for the SVG Logo - UPDATED SIZE */
-.leksvin-logo {
+.reinz-logo {
     height: 45px; /* Reduced from 32px for Mobile */
     width: auto;
     transition: height 0.3s ease;
@@ -193,7 +193,7 @@ ul { list-style: none; }
 .footer-logo { font-size: 1.8em; font-weight: 900; letter-spacing: 2px; margin-bottom: 10px; }
 
 /* NEW: Specific sizing for Footer Logo */
-.footer-logo .leksvin-logo {
+.footer-logo .reinz-logo {
     height: 45px; /* Reduced size (was 35px) */
     width: auto;
     display: block;
@@ -225,7 +225,7 @@ ul { list-style: none; }
         justify-content: space-between !important; 
     }
     
-    .leksvin-logo { height: 60px; } 
+    .reinz-logo { height: 60px; } 
     .desktop-nav-links { display: flex; }
     .hamburger { display: none; }
 
@@ -271,7 +271,7 @@ ul { list-style: none; }
 
     /* Footer */
     /* Align footer logo to left on desktop */
-    .footer-logo .leksvin-logo {
+    .footer-logo .reinz-logo {
         margin: 0; 
     }
 

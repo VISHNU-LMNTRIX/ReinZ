@@ -22,14 +22,14 @@ function loadHeader() {
     if (!headerPlaceholder) return;
 
     const path = window.location.pathname;
-    const isHomePage = path.endsWith('index.html') || path.endsWith('/') || path.endsWith('leksvin/'); 
+    const isHomePage = path.endsWith('index.html') || path.endsWith('/') || path.endsWith('reinz/'); 
     
     const navClass = isHomePage ? 'navbar' : 'navbar navbar-dark';
 
     const headerHTML = `
         <nav class="${navClass}">
             <a href="index.html" class="nav-logo">
-                <svg class="leksvin-logo" viewBox="0 0 753 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+                <svg class="reinz-logo" viewBox="0 0 753 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
                     <g transform="matrix(0.5,0,0,0.5,2.866161,-76.518776)">
                         <g transform="matrix(8.333333,0,0,8.333333,0,0)">
                             <g transform="matrix(0.055364,0,0,0.046964,-0.687879,18.364506)">
@@ -129,7 +129,7 @@ function loadFooter() {
         <div class="container footer-content">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <svg class="leksvin-logo" viewBox="0 0 753 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+                    <svg class="reinz-logo" viewBox="0 0 753 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
                         <g transform="matrix(0.5,0,0,0.5,2.866161,-76.518776)">
                             <g transform="matrix(8.333333,0,0,8.333333,0,0)">
                                 <g transform="matrix(0.055364,0,0,0.046964,-0.687879,18.364506)">
@@ -247,8 +247,8 @@ function renderCategoriesPage(isHomePage = false) {
     if(!grid) return;
     grid.innerHTML = ''; 
 
-    const initialCount = isHomePage ? 6 : leksvinData.categories.length;
-    const categoriesToShow = leksvinData.categories.slice(0, initialCount);
+    const initialCount = isHomePage ? 6 : reinzData.categories.length;
+    const categoriesToShow = reinzData.categories.slice(0, initialCount);
 
     categoriesToShow.forEach(cat => {
         createCategoryCard(cat, grid);
@@ -256,7 +256,7 @@ function renderCategoriesPage(isHomePage = false) {
 
     // UPDATED: Button now redirects instead of loading inline
     if(isHomePage && loadMoreBtn) {
-        if(leksvinData.categories.length > 6) {
+        if(reinzData.categories.length > 6) {
             loadMoreBtn.style.display = 'inline-block';
             loadMoreBtn.onclick = function(e) {
                 e.preventDefault();
@@ -290,12 +290,12 @@ function renderProductListPage() {
     const urlParams = new URLSearchParams(window.location.search);
     const catId = urlParams.get('category');
     
-    const category = leksvinData.categories.find(c => c.id === catId);
+    const category = reinzData.categories.find(c => c.id === catId);
 
     if (category) {
         document.getElementById('category-title').innerText = `Browse our ${category.name} products`;
-        if (leksvinData.products[catId]) {
-            currentCategoryProducts = leksvinData.products[catId];
+        if (reinzData.products[catId]) {
+            currentCategoryProducts = reinzData.products[catId];
         } else {
             currentCategoryProducts = []; 
         }
