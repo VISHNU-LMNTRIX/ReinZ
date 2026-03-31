@@ -216,7 +216,7 @@ function loadFooter() {
                     Manufactured by: Neurokem GmbH<br>
                     Made in Germany<br>` +
                     //<a href="tel:+97165348008" style="color:white; font-weight:bold;">+971 </a><br>  Temporarily hiding the phone until new business number is obtained. Remove the ` and + sign after updation
-                    `<a href="mailto:mail@neurokem.de">mail@neurokem.de</a><br>
+                    `<a href="mailto:mail@rein-z.com">mail@rein-z.com</a><br>
                     <a href="http://www.rein-z.com" style="color:white; font-weight:bold;" target="_blank">www.rein-z.com</a>
                 </address>
             </div>
