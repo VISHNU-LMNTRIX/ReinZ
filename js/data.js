@@ -81,7 +81,49 @@ const reinzData = {
                     text: "Rein'Z polishing compound PRO-Z10 enhances the surface to an excellent gloss. This intense blend of silicones and polymers not only seals for protection, it also intensifies the color of the painted surface while giving a very durable finish.",
                     bullets: ["Mirror like finish","Remove Deep Scratches", "Fast Acting Formula", "Durable gloss"]
                 }
-            }
+            },
+            {
+                id: 'pc-03',
+                name: "Glazion Pro Clearcoat Restoration Kit",
+                price: "Inquire for Price",
+                image: "img/products/glazion_pro_clearcoat.webp",
+                desc: {
+                    // 'text' is still used for the short preview on the product card
+                    text: "A professional-grade solution engineered to dramatically enhance your vehicle's appearance—without costly repainting.",
+                    richHtml: `
+                        <p>The <strong>Glazion Pro Clearcoat Restoration Kit</strong> is a professional-grade solution engineered to dramatically enhance your vehicle's appearance—without the need for costly repainting. Designed specifically for sun-damaged and deteriorating surfaces, Glazion Pro works by strengthening and rejuvenating the existing clearcoat.</p>
+                        <p>At the core of the system is our <strong>advanced Two-Component (True 2K) Clearcoat Restoration Technology</strong>, which seamlessly integrates with the existing clearcoat and base coat. This process rebuilds clarity, restores depth, and delivers a visibly renewed, high-gloss finish.</p>
+
+                        <h4>Effortless Application, Professional Results</h4>
+                        <p>Glazion Pro is designed for ease of use, requiring no specialized tools or prior experience. Whether you're a first-time user or maintaining a daily driver, the system ensures consistent, high-quality results.</p>
+
+                        <h4>What's Included</h4>
+                        <ul>
+                            <li>R Pro &amp; C Pro Glazion Pro System</li>
+                            <li>Surface preparation materials</li>
+                            <li>Application accessories</li>
+                            <li>Safety equipment</li>
+                            <li>Access to digital instructions and step-by-step videos</li>
+                        </ul>
+
+                        <h4>Performance &amp; Coverage</h4>
+                        <p>Glazion Pro reinforces and protects the existing clearcoat, restoring shine and surface integrity.</p>
+                        <ul>
+                            <li>Ideal for faded, oxidized, or sun-damaged clearcoats</li>
+                            <li>Does <strong>not</strong> repair deep paint damage or missing paint layers</li>
+                            <li>Full vehicle application typically requires <strong>6-8 oz</strong>, depending on size and condition</li>
+                            <li>Extra product is included for minor corrections</li>
+                        </ul>
+
+                        <h4>Preparation Recommendations</h4>
+                        <p>For optimal results, ensure proper surface preparation. Keep the following on hand:</p>
+                        <ul>
+                            <li>Isopropyl Alcohol</li>
+                            <li>Acetone</li>
+                        </ul>
+                    `
+                }
+            },
         ],
         'interior-protection': [
             {

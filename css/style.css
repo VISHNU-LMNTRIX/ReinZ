@@ -281,9 +281,10 @@ ul { list-style: none; }
     .footer-content .social-links { justify-content: flex-start; }
 
     /* Modal Desktop */
-    .modal-flex { flex-direction: row; align-items: flex-start; gap: 40px; }
-    .modal-img { flex: 1; max-height: 400px; }
-    .modal-details { flex: 1; }
+    .modal-content { overflow-y: hidden; }
+    .modal-flex { flex-direction: row; align-items: stretch; gap: 40px; }
+    .modal-img { flex: 1; max-height: 400px; align-self: center; flex-shrink: 0; }
+    .modal-details { flex: 1; overflow-y: auto; max-height: calc(70vh - 60px); padding-right: 8px; }
 }
 
 /* Mobile Heading Resize */
@@ -295,3 +296,9 @@ ul { list-style: none; }
 @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Rich description inside modal (for products with subheadings) */
+.modal-rich-desc p { line-height: 1.7; margin-bottom: 12px; }
+.modal-rich-desc h4 { font-size: 1em; font-weight: 700; margin: 20px 0 8px; color: #111; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+.modal-rich-desc ul { padding-left: 20px; margin-bottom: 12px; }
+.modal-rich-desc ul li { list-style: disc; line-height: 1.6; margin-bottom: 4px; }

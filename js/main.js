@@ -359,11 +359,20 @@ function openProductModal(productId) {
     const modal = document.getElementById('product-modal');
     const modalContent = document.getElementById('modal-body');
 
-    let bulletsHTML = '';
-    if (product.desc.bullets && product.desc.bullets.length > 0) {
-        bulletsHTML = '<ul style="margin-top:10px; padding-left: 20px;">' + 
-                      product.desc.bullets.map(b => `<li style="list-style:disc;">${b}</li>`).join('') + 
-                      '</ul>';
+    let descBodyHTML = '';
+    if (product.desc.richHtml) {
+        // Rich format: render pre-built HTML with subheadings
+        descBodyHTML = `<div class="modal-rich-desc">${product.desc.richHtml}</div>`;
+    } else {
+        // Standard format: plain text + optional bullets
+        let bulletsHTML = '';
+        if (product.desc.bullets && product.desc.bullets.length > 0) {
+            bulletsHTML = '<ul style="margin-top:10px; padding-left: 20px;">' + 
+                        product.desc.bullets.map(b => `<li style="list-style:disc;">${b}</li>`).join('') + 
+                        '</ul>';
+        }
+        descBodyHTML = `<p style="line-height:1.6;">${product.desc.text}</p>
+                        <div class="modal-bullets">${bulletsHTML}</div>`;
     }
 
     modalContent.innerHTML = `
@@ -371,8 +380,7 @@ function openProductModal(productId) {
             <img src="${product.image}" alt="${product.name}" class="modal-img" onerror="this.src='img/product-category/cleaning_and_detailing.jpg'">
             <div class="modal-details">
                 <h2>${product.name}</h2>
-                <p style="line-height:1.6;">${product.desc.text}</p>
-                <div class="modal-bullets">${bulletsHTML}</div>
+                ${descBodyHTML}
             </div>
         </div>
     `;
