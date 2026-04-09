@@ -328,7 +328,7 @@ function loadMoreProducts() {
 
         card.innerHTML = `
             <div class="product-img-wrapper">
-                <img src="${product.image}" alt="${product.name}" onerror="this.src='img/product-category/cleaning_and_detailing.jpg'">
+                <img src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.src='img/products/graphene.webp'">
             </div>
             <h3>${product.name}</h3>
             <p class="short-desc">${shortDesc}</p>
@@ -377,7 +377,7 @@ function openProductModal(productId) {
 
     modalContent.innerHTML = `
         <div class="modal-flex">
-            <img src="${product.image}" alt="${product.name}" class="modal-img" onerror="this.src='img/product-category/cleaning_and_detailing.jpg'">
+            <img src="${product.image}" alt="${product.name}" class="modal-img" loading="lazy" onerror="this.src='img/products/graphene.webp'">
             <div class="modal-details">
                 <h2>${product.name}</h2>
                 ${descBodyHTML}

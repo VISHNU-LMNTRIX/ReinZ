@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-
 :root {
     --primary: #000000;
     --accent: #009ad1;
@@ -76,9 +74,15 @@ ul { list-style: none; }
 /* --- Hero Section --- */
 .hero-banner {
     height: 100vh; min-height: 600px;
-    background: url('../img/banner-bg-mobile.webp') center/cover no-repeat; 
     display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);
-    position: relative; padding-top: 60px;
+    position: relative; padding-top: 60px; overflow: hidden;
+}
+.hero-bg-picture {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; z-index: 0;
+}
+.hero-bg-picture img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center;
 }
 .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); }
 .hero-content { position: relative; z-index: 1; padding: 0 20px; width: 100%; max-width: 100%; }
@@ -230,7 +234,6 @@ ul { list-style: none; }
     .hamburger { display: none; }
 
     /* Hero */
-    .hero-banner { background-image: url('../img/banner-bg-desktop.webp'); }
     .hero-content h1 { font-size: 4em; }
     .hero-content p { font-size: 1.3em; margin-bottom: 40px; }
     .hero-cta { flex-direction: row; justify-content: center; }
@@ -302,3 +305,19 @@ ul { list-style: none; }
 .modal-rich-desc h4 { font-size: 1em; font-weight: 700; margin: 20px 0 8px; color: #111; border-bottom: 1px solid #eee; padding-bottom: 4px; }
 .modal-rich-desc ul { padding-left: 20px; margin-bottom: 12px; }
 .modal-rich-desc ul li { list-style: disc; line-height: 1.6; margin-bottom: 4px; }
+
+/* Back link on product list page */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.9em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+.back-link:hover { color: var(--primary); }
+.back-link i { font-size: 0.85em; }
